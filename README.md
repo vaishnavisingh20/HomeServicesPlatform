@@ -1,6 +1,4 @@
 # Home Services Platform (UrbanClap-style)  
-KloudWizards Technical Evaluation Assignment
-
 ---
 
 ## Overview
@@ -248,14 +246,4 @@ http://localhost:3000
     Backend on Render/Railway
 
     Environment variable management
----
-### Challenges Faced
-
-1. Handling local connectivity between Next.js and Express during development
-
-2. Avoiding hydration mismatches between server and client components
-
-3. Structuring the project cleanly while keeping scope minimal
-
-4. Maintaining a no-scroll layout for specific pages while allowing scroll where required
 ---
