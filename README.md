@@ -152,6 +152,8 @@ Backend runs at:
 ```bash
 http://127.0.0.1:5000
 ```
+---
+
 ### 3. Frontend Setup
 ```bash
 cd frontend
@@ -163,6 +165,7 @@ Frontend runs at:
 ```bash
 http://localhost:3000
 ```
+---
 ### Key Assumptions
 
 1. No authentication was implemented (timeboxed decision)
@@ -174,23 +177,24 @@ http://localhost:3000
 4. Single-city scope
 
 5. No provider allocation logic
-
+---
 ### Trade-offs & Design Decisions
 1. Focused Vertical Slice
 
-Instead of building multiple flows (customer, provider, admin), I chose to implement one complete customer journey end-to-end.
+   Instead of building multiple flows (customer, provider, admin), I chose to implement one complete customer journey end-to-end.
 
 2. No Authentication
 
-Authentication was intentionally excluded to keep the vertical slice minimal and coherent.
+    Authentication was intentionally excluded to keep the vertical slice minimal and coherent.
 
 3. Minimal Validation
 
-Basic validation is implemented at controller level. Advanced schema validation was deferred.
+    Basic validation is implemented at controller level. Advanced schema validation was deferred.
 
 4. Local MongoDB
 
-Chose local MongoDB for simplicity and faster development during the timebox.
+    Choose local MongoDB for simplicity and faster development during the timebox.
+---
 
 ### What I Would Do Next (If Given More Time)
 1. Authentication System
@@ -205,7 +209,7 @@ Chose local MongoDB for simplicity and faster development during the timebox.
 
     Service management
 
-Availability scheduling
+    Availability scheduling
 
 3. Admin Dashboard
 
@@ -244,7 +248,7 @@ Availability scheduling
     Backend on Render/Railway
 
     Environment variable management
-
+---
 ### Challenges Faced
 
 1. Handling local connectivity between Next.js and Express during development
@@ -254,3 +258,4 @@ Availability scheduling
 3. Structuring the project cleanly while keeping scope minimal
 
 4. Maintaining a no-scroll layout for specific pages while allowing scroll where required
+---
